@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title> Flashcard App </title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <div class="add-card-con">
+            <button id="add-card"> Adicionar Novo Card</button>
+        </div>
+        <div class="card-con">
+            <div class="cards-list-container"></div>
+        </div>
+    </div>
+    <div class="modal hide" id="add-card-modal">
+        <h2> Adicionar Flashcard</h2>
+        <div class="wrapper">
+            <div class="error-con">
+                <span class="hide" id="error">
+                    Os campos não podem estar vazios
+                </span>
+            </div>
+            <i class="fa-solid fa-xmark" id="close-btn"></i>
+        </div>
+        <label for="question"> Questions:</label>
+        <textarea id="question" class="input" placeholder="Digite a questão aqui" rows="3"></textarea>
+        <label for="answer"> Answer:</label>
+        <textarea id="answer"class="input" placeholder="Digite a resposta aqui" rows="4"></textarea>
+        <button id="save-btn"> Salvar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
